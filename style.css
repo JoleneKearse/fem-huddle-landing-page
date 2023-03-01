@@ -53,6 +53,7 @@ h1 {
 p {
     font-family: 'Open Sans', sans-serif; 
     font-size: 1rem;
+    color: var(--clr-neutral-200);
 }
 
 /* ---------- LAYOUT ----------*/
@@ -91,7 +92,7 @@ button {
 }
 
 button,
-li a {
+.icon {
     cursor: pointer;
     box-shadow: .25rem .25rem .75em #00000033;
     transition: all .75s ease-in-out;
@@ -107,13 +108,12 @@ footer {
     margin-bottom: var(--gap-sm);
 }
 
-li a:focus,
-li a:hover {
-    color: var(--clr-accent-300);
+.icon:hover,
+.icon:focus {
+    filter: invert(47%) sepia(68%) saturate(1857%) hue-rotate(293deg) brightness(100%) contrast(101%);
 }
 
 /* ---------- COMPONENTS ----------*/
-
 footer ul {
     display: flex;
     justify-content: center;
