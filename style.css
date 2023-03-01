@@ -36,22 +36,23 @@ img {
 
 body {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     font-weight: 400;
     text-align: center;
-    line-height: 1.5;
+    line-height: 1.75;
     color: var(--clr-neutral-100);
     background-color: var(--clr-accent-700);
 }
 
 /* ---------- TYPOGRAPHY ----------*/
 h1 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 600;
 }
 
 p {
     font-family: 'Open Sans', sans-serif; 
+    font-size: 1rem;
 }
 
 /* ---------- LAYOUT ----------*/
@@ -67,7 +68,8 @@ main * + * {
 }
 
 header,
-.hero {
+.hero,
+.register {
     margin-bottom: var(--gap-lg)
 }
 
@@ -85,11 +87,29 @@ button {
     border-radius: 1.25em;
     background-color: var(--clr-neutral-100);
     color: var(--clr-accent-700);
+    box-shadow: .25rem .25rem .75em #00000033;
 }
 
+button,
+li a {
+    cursor: pointer;
+    box-shadow: .25rem .25rem .75em #00000033;
+}
 
+button:focus,
+button:hover {
+    background-color: var(--clr-accent-100);
+    color: var(--clr-neutral-100);
+}
 
+footer {
+    margin-bottom: var(--gap-sm);
+}
 
+li a:focus,
+li a:hover {
+    color: var(--clr-accent-300);
+}
 
 /* ---------- COMPONENTS ----------*/
 
@@ -99,6 +119,5 @@ footer ul {
     gap: .5em;
     list-style: none;
 }
-
 
 /* ---------- MEDIA QUERIES ----------*/
