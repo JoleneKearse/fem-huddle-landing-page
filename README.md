@@ -55,3 +55,15 @@ And my solution also in desktop, active states and mobile views:
 ## Author
 <hr>
 
+Hiya! 👋 My name is **Jolene Kearse**, (no pronouns, as Jolene, or pretty much whatever you want to call me - within limits 🤣 - is fine with me).  I may be a _tad_ older than you at 41 👊, simply because I was an **English as a Foreign Language Teacher** 🧑‍🏫 for over 15 years - so, yeah, for a little bit 🤌...  I lived all over the world, including China, England & South Korea.
+
+But that was then! 
+
+Now I'm an awesome **Software Engineer**! :dancer:  I'm a **proud, self-taught individual**. 
+
+I'd love ❤️ to connect with y'all (_sorry, I love using that ironicallly and do so with great frequency_ 😜):
+- [LinkedIn](https://www.linkedin.com/in/jolene-kearse-2562ba218/)
+- [Github](https://github.com/JoleneKearse)
+- [Twitter](https://twitter.com/FromJolene)
+
+
