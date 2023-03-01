@@ -36,7 +36,7 @@ img {
 
 body {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.15rem;
+    font-size: 1.2rem;
     font-weight: 400;
     text-align: center;
     line-height: 1.75;
@@ -57,7 +57,7 @@ p {
 
 /* ---------- LAYOUT ----------*/
 .container {
-    width: 90%;
+    width: 85%;
     margin-inline: auto;
 }
 
@@ -74,11 +74,10 @@ header,
 }
 
 .hero {
-    height: 40vh;
-    background-image: url("images/hero.png");
+    background-image: url("images/hero.svg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 button {
@@ -86,6 +85,7 @@ button {
     border: none;
     border-radius: 1.25em;
     background-color: var(--clr-neutral-100);
+    font-size: 1rem;
     color: var(--clr-accent-700);
     box-shadow: .25rem .25rem .75em #00000033;
 }
@@ -94,6 +94,7 @@ button,
 li a {
     cursor: pointer;
     box-shadow: .25rem .25rem .75em #00000033;
+    transition: all .75s ease-in-out;
 }
 
 button:focus,
