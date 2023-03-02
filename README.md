@@ -63,7 +63,40 @@ Next I decided, semi-with-crossed-fingers 🤞, that the 'cross the diamond' ima
 
 1) I do not know as much about applying `:hover` and `:focus` effects to **svg** images as I thought!
 
+Full disclosure: I originally exported the assets from **Figma** as **PNG** files.  _This dates back to my teaching career, where I needed the transparency of the PNG image file format - ingrained habits break hard_. But then I hated the _blurriness_ of the images and switched back to **SVG**.
 
+I was 💯 sure that you could modify SVG file colours (_Yes, I'm Canadian, and use Canadian spellings_) with CSS.  But **I don't have as much experience exporting assets from Figma**, so may be completely missing something here.  
+
+No matter what I did, I wasn't able to change the colour on a state change!
+
+I applied a class of `.icon` to each, but 
+```CSS
+.icon:hover,
+.icon:focus {
+  color: var(--clr-accent-300);
+}
+```
+didn't work!
+
+Huh?
+
+So, I will admit I went to [ChatGPT](https://chat.openai.com/chat) for help... and probably a bit too early.  I blindly followed it's solution of
+```CSS
+.icon path[stroke="white"]:hover {
+  stroke: var(--clr-accent-300);
+}
+```
+and the multitude of other complicated selectors I had to add on after hunting down the `white` in the `.svg` files.  Like, it was so much work and didn't even work!
+
+Next I asked our friendly neighbourhood AI if I could do it with JavaScript.  Again I blindly followed along...  After some clarifying questions, I identified it wouldn't have worked anyway.
+
+So...
+
+I went back to a good old-fashioned Google search and was reminded of the `filter` property.  I read a few articles, then, duh 🤦, remembered that there are so, so, so many intelligent software engineers already out there!
+
+Well, one of them must have created a [handly-dandy generator](https://codepen.io/sosuke/pen/Pjoqqp).  Lo and behold, someone had!  
+
+---
 
 ### Continued development 🎓
 
