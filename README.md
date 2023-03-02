@@ -5,19 +5,19 @@ I decided to focus on being **mobile-first**, **responsive** & **accessible** fo
 ## Table of Contents 🧵
 <hr>
 
-- [Overview 🔎](https://github.com/JoleneKearse/fem-huddle-landing-page#overview)
-  - [The Challenge 🏁]()
-  - [Screenshot 📸]()
-  - [Links 🔗]()
+- [Overview 🔎](https://github.com/JoleneKearse/fem-huddle-landing-page#overview-)
+  - [The Challenge 🏁](https://github.com/JoleneKearse/fem-huddle-landing-page#the-challenge-)
+  - [Screenshot 📸](https://github.com/JoleneKearse/fem-huddle-landing-page#screenshot-)
+  - [Links 🔗](https://github.com/JoleneKearse/fem-huddle-landing-page#links-)
 
-- [My Process 🤔]()
-  - [Built with 🛠]()
-  - [What I learned 📜]()
-  - [Continued development 🎓]()
-  - [Useful resources 📚]()
-- [Author 🤪]()
- - [My journey 📆]()
- - [Let's connect 🗯]()
+- [My Process 🤔](https://github.com/JoleneKearse/fem-huddle-landing-page#my-process-)
+  - [Built with 🛠](https://github.com/JoleneKearse/fem-huddle-landing-page#built-with-)
+  - [What I learned 📜](https://github.com/JoleneKearse/fem-huddle-landing-page#what-i-learned-)
+  - [Continued development 🎓](https://github.com/JoleneKearse/fem-huddle-landing-page#continued-development-)
+  - [Useful resources 📚](https://github.com/JoleneKearse/fem-huddle-landing-page#useful-resources-)
+- [Author 🤪](https://github.com/JoleneKearse/fem-huddle-landing-page#author-)
+ - [My journey 📆](https://github.com/JoleneKearse/fem-huddle-landing-page#my-journey-)
+ - [Let's connect 🗯](https://github.com/JoleneKearse/fem-huddle-landing-page#lets-connect-)
 
 ## Overview 🔎
 <hr>
