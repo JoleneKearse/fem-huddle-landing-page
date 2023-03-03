@@ -8,7 +8,7 @@
     --clr-accent-300: #FF52C1;
     --clr-accent-700: #684BB1;
     --gap-sm: 1.75em;
-    --gap-lg: 4em;
+    --gap-lg: 3em;
 }
 
 /* ---------- RESET ----------*/
@@ -29,6 +29,10 @@ html, body, div, h1, p, button, ul, li, footer {
     vertical-align: baseline;
 }
 
+html{
+    height: 100vh;
+}
+
 img {
     display: block;
     max-width: 100%;
@@ -36,7 +40,7 @@ img {
 
 body {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 400;
     text-align: center;
     line-height: 1.75;
@@ -46,14 +50,14 @@ body {
 
 /* ---------- TYPOGRAPHY ----------*/
 h1 {
-    font-size: 1.5rem;
+    font-size: clamp(1.5rem, 1.1479rem + 1.5023vw, 2.5rem);
     font-weight: 600;
     line-height: 1.5em;
 }
 
 p {
     font-family: 'Open Sans', sans-serif; 
-    font-size: 1rem;
+    font-size: clamp(1rem, 0.956rem + 0.1878vw, 1.125rem);
     color: var(--clr-neutral-200);
 }
 
@@ -65,43 +69,68 @@ p {
     margin-top: -18em;
 }
 
-* + *,
-main * + *,
-footer {
-    margin-top: var(--gap-sm);
-}
-
 header,
 .hero,
+.blurb,
 .register {
     margin-bottom: var(--gap-lg)
 }
 
+header {
+    position: fixed;
+    top: 0;
+}
+
+header {
+    top: 0;
+    margin-top: 2em;
+}
+
+main {
+    margin-top: 5em
+}
+
 button {
-    padding: .4em 20vw;
+    padding: .4em 5em;
     border: none;
     border-radius: 1.25em;
-    background-color: var(--clr-neutral-100);
     font-size: 1rem;
-    color: var(--clr-accent-700);
     box-shadow: .25rem .25rem .75em #00000033;
 }
 
+footer {
+    margin-top: 0;
+    margin-bottom: 3em;
+}
+
+/* ---------- COMPONENTS ----------*/
 button,
 .icon {
     cursor: pointer;
     transition: all .75s ease-in-out;
 }
 
-button:focus,
-button:hover {
+.register {
+    background-color: var(--clr-neutral-100);
+    color: var(--clr-accent-700);
+}
+
+.register:focus,
+.register:hover {
     background-color: var(--clr-accent-100);
     color: var(--clr-neutral-100);
 }
 
-footer {
-    margin-top: 0;
-    margin-bottom: 2.25em;
+.register {
+    margin-bottom: 4em;
+}
+
+footer ul {
+
+    display: flex;
+    justify-content: center;
+    gap: .5em;
+    list-style: none;
 }
 
 .icon:hover,
@@ -110,15 +139,7 @@ footer {
     box-shadow: .25rem .25rem .75em #00000033;
 }
 
-/* ---------- COMPONENTS ----------*/
-footer ul {
-    display: flex;
-    justify-content: center;
-    gap: .5em;
-    list-style: none;
-}
-
-/* deco elements */
+/* deco images*/
 .hero {
     margin-inline: auto;
 }
@@ -134,43 +155,30 @@ footer ul {
 }
 
 /* ---------- MEDIA QUERIES ----------*/
-@media (min-width: 420px) {
-    .container {
-        margin-top: -20em;
+@media (min-width: 1439px) {
+    .deco {
+        background-image: url("images/bg-desktop.svg");
+        background-size: auto;
     }
-}
-
-@media (min-width: 490px) {
     .container {
-        margin-top: -25em;
-    }
-}
-
-@media (min-width: 560px) {
-    .container {
-        margin-top: -27em;
-    }
-}
-
-@media (min-width: 630px) {
-    .container {
-        margin-top: -30em;
-    }
-}
-
-@media (min-width: 700px) {
-    .container {
-        width: 90%;
-        margin-top: -37em;
+        margin-top: -72em;
     }
     main {
         display: flex;
-        gap: var(--gap-sm);
+        justify-content: space-between;
+        gap: var(--gap-lg);
+        margin-top: -5em;
+        padding: 0;
+    }
+    main img {
+        flex: 40% 1 1;
+    }
+    .landing-page {
+        flex: 35% 1 1;
         text-align: left;
     }
     .register {
-        display: inline-block;
-        width: 20vw;
+        padding: .4em 4em;
     }
     footer ul {
         justify-content: flex-end;
