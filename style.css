@@ -7,8 +7,8 @@
     --clr-accent-100: #E880E8;
     --clr-accent-300: #FF52C1;
     --clr-accent-700: #684BB1;
-    --gap-sm: 1.5em;
-    --gap-lg: 3.5em;
+    --gap-sm: 1.75em;
+    --gap-lg: 4em;
 }
 
 /* ---------- RESET ----------*/
@@ -20,7 +20,7 @@
     box-sizing: border-box;
 }
 
-html, body, div, h1, p, button, ul, li {
+html, body, div, h1, p, button, ul, li, footer {
     margin: 0;
     padding: 0;
     border: 0;
@@ -46,8 +46,9 @@ body {
 
 /* ---------- TYPOGRAPHY ----------*/
 h1 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 600;
+    line-height: 1.5em;
 }
 
 p {
@@ -58,13 +59,15 @@ p {
 
 /* ---------- LAYOUT ----------*/
 .container {
-    width: 85%;
+    display: fixed;
+    width: 80%;
     margin-inline: auto;
+    margin-top: -18em;
 }
 
-header,
 * + *,
-main * + * {
+main * + *,
+footer {
     margin-top: var(--gap-sm);
 }
 
@@ -82,7 +85,7 @@ header,
 }
 
 button {
-    padding: .5em 25vw;
+    padding: .4em 20vw;
     border: none;
     border-radius: 1.25em;
     background-color: var(--clr-neutral-100);
@@ -94,7 +97,6 @@ button {
 button,
 .icon {
     cursor: pointer;
-    box-shadow: .25rem .25rem .75em #00000033;
     transition: all .75s ease-in-out;
 }
 
@@ -105,12 +107,14 @@ button:hover {
 }
 
 footer {
-    margin-bottom: var(--gap-sm);
+    margin-top: 0;
+    margin-bottom: 2.25em;
 }
 
 .icon:hover,
 .icon:focus {
     filter: invert(47%) sepia(68%) saturate(1857%) hue-rotate(293deg) brightness(100%) contrast(101%);
+    box-shadow: .25rem .25rem .75em #00000033;
 }
 
 /* ---------- COMPONENTS ----------*/
@@ -121,4 +125,18 @@ footer ul {
     list-style: none;
 }
 
+/* deco elements */
+.deco {
+    background-image: url("images/bg-mobile.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 0;
+    width: 100%;
+    padding-top: 100%;
+    z-index: -1;
+}
+
 /* ---------- MEDIA QUERIES ----------*/
+@media (min-width: 405px) {
+    
+}
