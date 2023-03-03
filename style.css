@@ -77,13 +77,6 @@ header,
     margin-bottom: var(--gap-lg)
 }
 
-.hero {
-    background-image: url("images/hero.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
 button {
     padding: .4em 20vw;
     border: none;
@@ -126,6 +119,10 @@ footer ul {
 }
 
 /* deco elements */
+.hero {
+    margin-inline: auto;
+}
+
 .deco {
     background-image: url("images/bg-mobile.svg");
     background-size: cover;
@@ -137,6 +134,45 @@ footer ul {
 }
 
 /* ---------- MEDIA QUERIES ----------*/
-@media (min-width: 405px) {
-    
+@media (min-width: 420px) {
+    .container {
+        margin-top: -20em;
+    }
+}
+
+@media (min-width: 490px) {
+    .container {
+        margin-top: -25em;
+    }
+}
+
+@media (min-width: 560px) {
+    .container {
+        margin-top: -27em;
+    }
+}
+
+@media (min-width: 630px) {
+    .container {
+        margin-top: -30em;
+    }
+}
+
+@media (min-width: 700px) {
+    .container {
+        width: 90%;
+        margin-top: -37em;
+    }
+    main {
+        display: flex;
+        gap: var(--gap-sm);
+        text-align: left;
+    }
+    .register {
+        display: inline-block;
+        width: 20vw;
+    }
+    footer ul {
+        justify-content: flex-end;
+    }
 }
