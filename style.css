@@ -129,7 +129,6 @@ button,
 }
 
 footer ul {
-
     display: flex;
     justify-content: center;
     gap: .5em;

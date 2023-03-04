@@ -2,7 +2,7 @@
 
 Hello, 你好, 안녕하세요, Hola, Hallo, Bonjour!  
 
-Welcome to my **mobile-first**, **responsive**, **accessible** solution the **[Huddle Landing Page Challenge](https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0/hub)** from Frontend Mentor!
+Welcome to my **mobile-first**, **responsive**, solution the **[Huddle Landing Page Challenge](https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0/hub)** from Frontend Mentor!
 
 ## Table of Contents 🧵
 <hr>
@@ -41,7 +41,7 @@ And, tada 🪄, my solution - also in desktop, active states and mobile views:
 ### Links 🔗
 
 - [Github](https://github.com/JoleneKearse/fem-huddle-landing-page#overview-) - I certainly hope you're checking out this awesome-sauce README that I spent a fun evening composing!
-- [Live link]() - And also hope you, spectacular 🌟 you, have the time to impart your so-appreciated code reviews to me.  
+- [Live link](https://fem-huddle-landing-page-jade.vercel.app/) - And also hope you, spectacular 🌟 you, have the time to impart your so-appreciated code reviews to me.  
 
 ## My Process 🤔
 
@@ -55,11 +55,15 @@ So mobile-first won out! 🎆
 Next I decided, semi-with-crossed-fingers 🤞, that the 'cross the diamond' images in the back would be do-able with psuedo-elements and decided to leave that until the end.  _I'm hoping that doesn't come back to bite me in the butt!_ ⚡
 
 ### Built with 🛠
-- Semantic HTML5 markup - _I'd forgotten this on my last challenge, which I blame React for. !_ 🤣
+- Semantic HTML5 markup - _I'd forgotten this on my last challenge, which I blame React for!_ 🤣
 - CSS custom properties
 - Mobile-first workflow
+- `position: fixed`
+- Flexbox
 
 ### What I learned 📜
+
+#### 1) Adding Hover & Focus Effects on SVGs
 
 1) I do not know as much about applying `:hover` and `:focus` effects to **svg** images as I thought!
 
@@ -96,9 +100,19 @@ I went back to a good old-fashioned Google search and was reminded of the `filte
 
 Well, one of them must have created a [handly-dandy generator](https://codepen.io/sosuke/pen/Pjoqqp).  Lo and behold, someone had!  
 
+#### 2) A Reminder of Fixed Position
+
+The background image did come back to bite me!  Like a fool,  I stubbornly persisited in media query after media query to keep my `header` in the proper position.  I had to prove it could be done!  Then I came back to reality...
+
+That made no sense whatsoever!
+
+In came `position: fixed` with `margin-top`.  Suddenly the logo just stayed in place! 
+
 ---
 
 ### Continued development 🎓
+
+Although I've been itching to get back to building my own projects, this one showed me I've been neglecting my love for CSS!  
 
 ### Useful resources 📚
 
@@ -130,7 +144,7 @@ Now I'm an awesome **Software Engineer**! :dancer:  I'm a **proud, self-taught i
 
 ### My journey 📆
 
-I'm also proud of how far I came in 2022.  I finally learned **JavaScript**! 🍻 _I had struggled for about a year before I finally could add that to my skillset.  If you're interested in an awesome 🔥 course check out **[Class Central's Bootcamp YouTube Playlist going through freeCodeCamp's Algorithms and Data Structures Certification](https://www.youtube.com/playlist?list=PLU3RKvMpgrSEoqVIV14K_zuinrIBcnCgT)._
+I'm also proud of how far I came in 2022.  I finally learned **JavaScript**! 🍻 _I had struggled for about a year before I finally could add that to my skillset.  If you're interested in an awesome 🔥 course check out **[Class Central's Bootcamp YouTube Playlist going through freeCodeCamp's Algorithms and Data Structures Certification](https://www.youtube.com/playlist?list=PLU3RKvMpgrSEoqVIV14K_zuinrIBcnCgT).**
 
 Then I met an awesome group of fellow-learning devs, **The Explorers**.  This exposed me to the myriad and oft-confusing ways of using **Git** in a team - loving it now!  But also projects using so many kinds of tech that would've just blown my mind a year before 🤯 including:
 - React
@@ -147,7 +161,7 @@ I've been boning up on **React**, and just taking so many courses to learn **Bac
 
 One of those courses has seen me going back to **Python** - which I had treated as my _crutch language_ to understand JavaScript.  🤣  But I've been loving navigating in multiple languages.
 
-Another challenge I am undertaking this year is [Exercism's](https://exercism.org/) **#12in23**.  This is a cool 😎 opportunity to _try out_ 12 different languages this year.  Each month has a theme, like **Functional February** and **Mechanical March** to encourage you to check out different language paradims.  I'm loving this chance to dip my toe in other types of programming.  I find I'm gaining the ability to evaluate various language's strengths and project needs.
+Another challenge I am undertaking this year is [Exercism's](https://exercism.org/) **#12in23**.  This is a cool 😎 opportunity to _try out_ 12 different languages this year.  Each month has a theme, like **Functional February** and **Mechanical March** to encourage you to check out different language paradims.  I'm loving this chance to dip my toe in other types of programming.  I find I'm gaining the ability to evaluate various languages' strengths and project needs.
 
 ### Let's connect 🗯
 
