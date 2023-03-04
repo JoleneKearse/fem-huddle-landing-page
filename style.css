@@ -10,6 +10,7 @@
     --gap-sm: 1.75em;
     --gap-lg: 3em;
     --width-max: 1440px;
+    color-scheme: dark;
 }
 
 /* ---------- RESET ----------*/
