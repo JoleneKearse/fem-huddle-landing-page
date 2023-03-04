@@ -9,6 +9,7 @@
     --clr-accent-700: #684BB1;
     --gap-sm: 1.75em;
     --gap-lg: 3em;
+    --width-max: 1440px;
 }
 
 /* ---------- RESET ----------*/
@@ -65,6 +66,7 @@ p {
 .container {
     display: fixed;
     width: 80%;
+    max-width: var(--width-max);
     margin-inline: auto;
     margin-top: -18em;
 }
@@ -87,7 +89,7 @@ header {
 }
 
 main {
-    margin-top: 5em
+    margin-top: 2.95em
 }
 
 button {
@@ -142,6 +144,7 @@ footer ul {
 /* deco images*/
 .hero {
     margin-inline: auto;
+    max-width: calc(var(--width-max) * 80%);
 }
 
 .deco {
@@ -151,23 +154,31 @@ footer ul {
     height: 0;
     width: 100%;
     padding-top: 100%;
-    z-index: -1;
 }
 
 /* ---------- MEDIA QUERIES ----------*/
-@media (min-width: 1439px) {
+@media (min-width: 600px) {
+    .container {
+        margin-top: -30em;
+    }
+}
+@media (min-width: 650px) {
     .deco {
         background-image: url("images/bg-desktop.svg");
-        background-size: auto;
+        background-size: cover;
     }
     .container {
-        margin-top: -72em;
+        margin-top: -40em;
+    }
+}
+@media (min-width: 1000px) {
+    .container {
+        margin-top: -60em;
     }
     main {
         display: flex;
         justify-content: space-between;
         gap: var(--gap-lg);
-        margin-top: -5em;
         padding: 0;
     }
     main img {
@@ -177,10 +188,30 @@ footer ul {
         flex: 35% 1 1;
         text-align: left;
     }
+    footer ul {
+        justify-content: flex-end;
+    }
+}
+@media (min-width: 1439px) {
+    body {
+        overflow: hidden;
+    }
+    .deco {
+        background-image: url("images/bg-desktop.svg");
+        background-size: var(--width-max);
+    }
+    .container {
+        margin-top: -80em;
+    }
     .register {
         padding: .4em 4em;
     }
-    footer ul {
-        justify-content: flex-end;
+    .icon {
+        width: 2em;
+    }
+}
+@media (min-width: 1600px) {
+    .container {
+        margin-top: -100em;
     }
 }

@@ -110,6 +110,10 @@ Well, one of them must have created a [handly-dandy generator](https://codepen.i
 
 [Font-size Clamp Generator](https://clamp.font-size.app/)
 
+[Responsively](https://responsively.app/download)
+
+[Viewport Resizer Chrome Extension](https://chrome.google.com/webstore/detail/viewport-resizer-%E2%80%93-respon/kapnjjcfcncngkadhpmijlkblpibdcgm/related?hl=en)
+
 
 ## Author 🤪
 <hr>
