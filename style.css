@@ -65,32 +65,25 @@ p {
 
 /* ---------- LAYOUT ----------*/
 .container {
-    display: fixed;
-    width: 80%;
-    max-width: var(--width-max);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: clamp(296px, 80vw, var(--width-max));
     margin-inline: auto;
-    margin-top: -18em;
 }
 
 header,
 .hero,
 .blurb,
-.register {
+.register,
+footer {
     margin-bottom: var(--gap-lg)
 }
 
 header {
-    position: fixed;
-    top: 0;
-}
-
-header {
-    top: 0;
-    margin-top: 2em;
-}
-
-main {
-    margin-top: 2.95em
+    margin-top: var(--gap-lg);
 }
 
 button {
@@ -143,7 +136,7 @@ footer ul {
 
 /* deco images*/
 .hero {
-    margin-inline: auto;
+    margin: auto;
     max-width: calc(var(--width-max) * 80%);
 }
 
@@ -157,27 +150,17 @@ footer ul {
 }
 
 /* ---------- MEDIA QUERIES ----------*/
-@media (min-width: 600px) {
-    .container {
-        margin-top: -30em;
-    }
-}
 @media (min-width: 650px) {
     .deco {
         background-image: url("images/bg-desktop.svg");
         background-size: cover;
     }
-    .container {
-        margin-top: -40em;
-    }
 }
 @media (min-width: 1000px) {
-    .container {
-        margin-top: -60em;
-    }
     main {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         gap: var(--gap-lg);
         padding: 0;
     }
@@ -198,20 +181,16 @@ footer ul {
     }
     .deco {
         background-image: url("images/bg-desktop.svg");
-        background-size: var(--width-max);
+        background-size: var(--width-max) 800px;
+
     }
-    .container {
-        margin-top: -80em;
+    main {
+        margin-top: 7em;
     }
     .register {
         padding: .4em 4em;
     }
     .icon {
         width: 2em;
-    }
-}
-@media (min-width: 1600px) {
-    .container {
-        margin-top: -100em;
     }
 }

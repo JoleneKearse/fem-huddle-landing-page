@@ -36,7 +36,7 @@ Here's the provided design files:
 ![The Figma file's screenshots including desktop, active states & mobile](screenshots/figma-designs.png)
 
 And, tada 🪄, my solution - also in desktop, active states and mobile views:
-![My solution screenshots of desktop, active states, and mobile views]()
+![My solution screenshots of desktop, active states, and mobile views](screenshots/huddle-landing-page.mp4)
 
 ### Links 🔗
 
@@ -106,7 +106,18 @@ The background image did come back to bite me!  Like a fool,  I stubbornly persi
 
 That made no sense whatsoever!
 
-In came `position: fixed` with `margin-top`.  Suddenly the logo just stayed in place! 
+I found I could readjust my margins by controlling the container itself:
+```CSS
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: clamp(296px, 80vw, var(--width-max));
+    margin-inline: auto;
+}
+``` 
 
 ---
 
@@ -123,8 +134,6 @@ Although I've been itching to get back to building my own projects, this one sho
 [CSS filter generator to convert from black to target hex color](https://codepen.io/sosuke/pen/Pjoqqp)
 
 [Font-size Clamp Generator](https://clamp.font-size.app/)
-
-[Responsively](https://responsively.app/download)
 
 [Viewport Resizer Chrome Extension](https://chrome.google.com/webstore/detail/viewport-resizer-%E2%80%93-respon/kapnjjcfcncngkadhpmijlkblpibdcgm/related?hl=en)
 
