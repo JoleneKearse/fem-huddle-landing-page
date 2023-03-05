@@ -36,7 +36,7 @@ Here's the provided design files:
 ![The Figma file's screenshots including desktop, active states & mobile](screenshots/figma-designs.png)
 
 And, tada 🪄, my solution - also in desktop, active states and mobile views:
-![My solution screenshots of desktop, active states, and mobile views](screenshots/huddle-landing-page.mp4)
+![My solution screenshots of desktop, active states, and mobile views](screenshots/screenshot.gif)
 
 ### Links 🔗
 
