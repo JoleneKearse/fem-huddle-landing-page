@@ -58,7 +58,7 @@ Next I decided, semi-with-crossed-fingers 🤞, that the 'cross the diamond' ima
 - Semantic HTML5 markup - _I'd forgotten this on my last challenge, which I blame React for!_ 🤣
 - CSS custom properties
 - Mobile-first workflow
-- `position: fixed`
+- `position: absolute`
 - Flexbox
 
 ### What I learned 📜
